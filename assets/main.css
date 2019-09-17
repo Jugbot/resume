@@ -4,7 +4,10 @@
 *:before {
   box-sizing: inherit;
 }
-
+*[todo] {
+  background-color: lightcoral;
+  color:white;
+}
 :root {
   --pane-margin: 2.0rem;
   --pane-margin-n: calc(-1 * var(--pane-margin))
@@ -117,6 +120,7 @@ table.baseline tbody, .baseline {
 }
 .pane {
   padding: var(--pane-margin);
+  position: relative;
 }
 .left.pane {
   border-right: 1px solid black;
@@ -170,4 +174,9 @@ ul.inline {
 
 .inline {
   display: inline;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  padding-bottom: inherit;
 }
