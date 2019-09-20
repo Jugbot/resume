@@ -26,6 +26,7 @@ body {
   margin: auto;
   width: 8.5in;
   height: 11in;
+  padding: 3rem; /* printer border */
   background-color: white;
   color: black;
   text-rendering: optimizeLegibility;
