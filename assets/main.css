@@ -148,14 +148,13 @@ table.baseline tbody, .baseline {
 .banner * {
   letter-spacing: 0.1rem;
 }
-.divider:before {
-  content: "\2015\2015";
-}
 .divider {
   line-height: 0;
   margin: auto;
+  border-bottom: 1px solid black;
   margin-bottom: 2px;
-  width: 20%;
+  padding-top: 2px;
+  width: calc(100%/7*5);
 }
 ul.inline li {
   font-family: 'Roboto Condensed', sans-serif;
