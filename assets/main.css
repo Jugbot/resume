@@ -3,10 +3,6 @@
 *:before {
   box-sizing: inherit;
 }
-*[todo] {
-  background-color: lightcoral;
-  color:white;
-}
 *[disabled] {
   display: none;
 }
@@ -41,6 +37,7 @@ body {
 }
 p {
   text-align: justify;
+  margin-top: 0;
 }
 ul {
   padding-inline-start: 2.8rem;
@@ -51,21 +48,9 @@ ul {
 tbody { 
   vertical-align: top;
 }
-td { 
-  padding-left: 1.0rem;
-}
-td:last-child {
-  padding-right: 1.0rem;
-}
-table {
-  margin: 0 -1.0rem;
-}
 
 b, strong {
   font-weight: bold;
-}
-p {
-  margin-top: 0;
 }
 h1,
 h2,
@@ -109,11 +94,20 @@ h6 {
   letter-spacing: 0;
   line-height: calc(var(--line-height-base) + 0.4);
 }
-table.baseline tbody, .baseline {
-  vertical-align: baseline !important;
+table {
+  width: 100%;
+}
+td h3 {
+  margin: 0;
 }
 .center-text {
   text-align: center;
+}
+.right-text {
+  text-align: right;
+}
+.left-text {
+  text-align: left;
 }
 .no-wrap {
   white-space: nowrap;
@@ -131,7 +125,6 @@ table.baseline tbody, .baseline {
   border-right: 1px solid black;
 }
 .left .banner {
-  /* background-color: #000d; */
   padding-left: var(--pane-margin);
   padding-right: var(--pane-margin);
   margin-left: var(--pane-margin-n);
@@ -144,59 +137,20 @@ table.baseline tbody, .baseline {
   border-bottom: 1px solid black;
   padding-top: 1.0rem;
   margin-bottom: 1.0rem;
-}
-.banner * {
   letter-spacing: 0.1rem;
 }
-.divider {
-  line-height: 0;
-  margin: auto;
-  border-bottom: 1px solid black;
-  margin-bottom: 2px;
-  padding-top: 2px;
-  width: calc(100%/7*5);
-}
+ul.biglist li,
 ul.inline li {
   font-family: 'Roboto Condensed', sans-serif;
-  display: inline-block;
   font-size: 2.4rem;
-  padding-right: 5px;
   margin: 0;
   line-height: 1.35;
   font-weight: normal;
   list-style: none;
   margin-bottom: 0.4em;
 }
-
+ul.biglist,
 ul.inline {
-  display: block;
   padding: 0;
   margin: 0;
-}
-
-ul.biglist {
-  padding: 0;
-  margin: 0;
-}
-
-ul.biglist li {
-  font-family: 'Roboto Condensed', sans-serif;
-  font-size: 2.4rem;
-  margin: 0;
-  line-height: 1.35;
-  font-weight: normal;
-  list-style: none;
-  margin-bottom: 0.4em;
-}
-
-.inline { 
-  display: inline;
-}
-.footer {
-  position: absolute;
-  bottom: 0;
-  padding-bottom: inherit;
-}
-.footer ul {
-  list-style-type: unset;
 }
