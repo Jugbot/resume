@@ -11,7 +11,11 @@
   --pane-margin-n: calc(-1 * var(--pane-margin));
   --line-height-base: 1.0;
 }
-
+@page {
+  page-orientation: upright;
+  size: 8.5in 11in;
+  margin: 0rem;
+}
 html {
   box-sizing: border-box;
   font-size: 7px;
